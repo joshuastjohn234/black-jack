@@ -1,0 +1,18 @@
+// MAKE Globe var to go into my classes and function
+// make class for deck, cards wit prop of cards and suits and value
+// make a shuffle method to randomize the order of the card in the dec
+// make a function thats gonna return a html element for the card and innertext color 
+// we need to make a function to make suit and  vaule are on for each indivdual card so we can have 52 cards
+make score board 
+make betting chips 
+start game/ logic for black jack
+make player
+make playerui/ dealer
+make a method to draw cards to player & dealer
+render the cards to player and UI
+make hit/ stay button
+make score show on score board /show winner
+
+
+
+

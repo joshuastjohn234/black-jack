@@ -1,33 +1,37 @@
 
-// MAKE GLOBLE VAR TO GO INTO CLASSES AND FUNTION
-// APPEND DECK SHUFFLE URL TO DECK DIV
-const DECK_URL = `https://deckofcardsapi.com/api/deck/new/`;
-// MAKE A FUNCTION TO MERGE SUITS AND VAULE TOGETHER
-const SUITS = ['A','S', 'D', 'H' ,' C'] ;
-const Vaule =[ 'A','1','2','3','4','5','6','7','8','9','10','J','Q','K'];
-class Deck {
-    constructor(cards) {
-        this.cards = cards
-    }
+const cardSUITS = ['♠', '♦', '♥' ,'♣'] ;
+const Value =[ 'A','2','3','4','5','6','7','8','9','10','J','Q','K'];
+  export default class DECK{
+     constructor(cards = freshDeck()){
+         this.cards = cards
+         
+     }  
+  shuffle() {
+    this.cards.sort((a, b)=> Math.random() - .5)
+    }  
+  }
+  class CARD {
+      constructor(suit,value,) {
+          this.suit = suit
+          this.value = value
+          
+   }
+   getcolor() {
+     return this.suit === '♠'|| this.suit === '♣' ? 'black' : ' red'
+   }
+  getHTML(){
+  const cardDiv = document.createElement('div')
+  cardDiv.innerText = this.suit
+  cardDiv.classList.add("card", this.color)
+  cardDiv.dataset.value = `${this.value} ${this.suit}`
+  return cardDiv
+ }
+}  
+
+function freshDeck() {
+    return cardSUITS.flatMap(suit => {
+    return Value.map(value => {
+    return new CARD(suit,value ) 
+    })
+  })
 }
-// use api to shuffle the deck
-let deck
-
-shuffle () {
-    
-
-
-class Cards {
-    constructor(suits,value) {
-        this.suits = suits;
-        this.value = this.value;
-    }
-}
-// MAKE A FUNCTION TO MERGE SUITS AND VAULE TOGETHER
-function newDeck() {
- return SUITS.flatmap(suits=>{
-  return Value.map(value => {
- return new Card (suits,value)
-  })   
- })
-};
