@@ -2,7 +2,7 @@
 const cardSUITS = ['♠', '♦', '♥' ,'♣'] ;
 const Value =[ 'A','2','3','4','5','6','7','8','9','10','J','Q','K'];
   export default class DECK{
-     constructor(cards = freshDeck()){
+     constructor(cards = playDeck()){
          this.cards = cards
          
      }  
@@ -28,7 +28,7 @@ const Value =[ 'A','2','3','4','5','6','7','8','9','10','J','Q','K'];
  }
 }  
 
-function freshDeck() {
+function playDeck() {
     return cardSUITS.flatMap(suit => {
     return Value.map(value => {
     return new CARD(suit,value ) 
