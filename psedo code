@@ -3,16 +3,17 @@
 // make a shuffle method to randomize the order of the card in the dec
 // make a function thats gonna return a html element for the card and innertext color 
 // we need to make a function to make suit and  vaule are on for each indivdual card so we can have 52 cards
-make score board 
-make betting chips 
-start game/ logic for black jack
-make player
-make playerui/ dealer
+make a start function 
+make logic for War
+split main deck
+make player card/deck
+make computer card/ deck
 make a method to draw cards to player & dealer
-render the cards to player and UI
-make hit/ stay button
-make score show on score board /show winner
-
+render the cards to player and Ui
+//  make a function to flip cards for both players in btw rounds
+// use push , shift, pop to push card from bottom to the top hand
+//make a condition for win lose or draw
+// use emjio in statement of win lose or draw
 
 
 

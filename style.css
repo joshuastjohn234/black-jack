@@ -10,6 +10,7 @@ body{
     grid-template-rows: 7rem 2rem 7rem;
     gap:.3rem;
     justify-content: center;
+    padding-top: 1rem;
     padding: 4rem;
     background-color: green;
 }
@@ -18,12 +19,20 @@ body{
     height:100%;
     width: 100%;
     border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 3rem;
     border-radius: .5rem;
     color: white;
     user-select: none;
 }
-
+.computer-deck{
+    background-color: black;
+}
+.player-deck{
+    background-color: blue;
+}
 .text{
 grid-column: span 2;
 display: flex;
@@ -72,13 +81,8 @@ font-size: 1rem;
 
 }
 
-.dealer-deck {
-    background-color: wheat;
-}
 
-.player-deck{
-    background-color: wheat;
-}
+
 
 .chip{
     position: relative;
